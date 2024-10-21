@@ -17,8 +17,12 @@ public class Main {
     }
 
     public static boolean IsDigit(char c) {
-        boolean statement = Character.isAlphabetic(c);
+        char[] digitsArr = new char[] {'0','1','2','3','4','5','6','7','8','9'};
 
-        return !statement;
+        for (char value : digitsArr) {
+            if (value == c) {return true;}
+        }
+
+        return false;
     }
 }
